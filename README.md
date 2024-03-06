@@ -1,7 +1,7 @@
-# Pitchfork Child <br/> A WordPress child theme for Pitchfork
+# Pitchfork Students <br/> A WordPress child theme for Pitchfork
 
 Requires at least: WP 6.0
-Requires PHP: 7.4
+Requires PHP: 8.0
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 ## Recommended / Required Additional Plugins
 
 - This child theme template contains basic setup for adding blocks via Advanced Custom Fields.
-- But, ACF is not a hard requirement to get started with this child theme template.
 
 ## Development
 
