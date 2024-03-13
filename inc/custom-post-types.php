@@ -46,7 +46,7 @@ function pitchfork_students_studentorg_cpt() {
 		'description'           => __( 'A student organization', 'pitchfork-students' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'excerpt' ),
-		'taxonomies'            => array( 'orgtype' ),
+		'taxonomies'            => array( 'category', 'orgtype' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -101,7 +101,7 @@ function pitchfork_students_orgtype_tax() {
 	$args = array(
 		'labels'                     => $labels,
 		'hierarchical'               => true,
-		'public'                     => true,
+		'public'                     => false,
 		'show_ui'                    => true,
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
