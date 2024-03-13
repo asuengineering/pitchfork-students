@@ -38,4 +38,4 @@ A small script to lint the codebase is also included via `composer`. It utilizes
 
 ### Version 0.1
 
-- First stable release of the child theme.
+First usable release which includes CPT for `studentorg` and associated fields/taxonomies. Released to staging environment only.
