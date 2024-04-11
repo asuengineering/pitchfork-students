@@ -1,6 +1,6 @@
 {
   "name": "pitchfork-students",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A child theme for students.engineering.asu.edu. Used with the Pitchfork theme from ASU Engineering",
   "repository": "asuengineering/pitchfork-students",
   "main": ".eslintrc.js",

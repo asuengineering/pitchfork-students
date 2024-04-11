@@ -36,6 +36,11 @@ A small script to lint the codebase is also included via `composer`. It utilizes
 
 ## Release Notes
 
+### Version 1.0
+
+- Finalized style and tempalate files for Search and Filter support.
+- Removed reference for `studentorg` CPT that pointed to the default `category` taxonomy. Useful for content migration nut no longer needed.
+
 ### Version 0.1
 
 First usable release which includes CPT for `studentorg` and associated fields/taxonomies. Released to staging environment only.
