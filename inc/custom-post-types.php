@@ -61,6 +61,7 @@ function pitchfork_students_studentorg_cpt() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 		'show_in_rest'          => true,
+		'rewrite'				=> array( 'slug' => 'clubs')
 	);
 	register_post_type( 'studentorg', $args );
 

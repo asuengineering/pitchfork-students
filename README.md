@@ -40,6 +40,7 @@ A small script to lint the codebase is also included via `composer`. It utilizes
 
 - Addressed logic error in `studentorg` CPT which would only display an email address if there was also a URL present.
 - The `studentorg` URL field now produces a link instead of plain text in the single template.
+- Added rewrite rule to CPT to change end point to `/clubs` for any single organization.
 
 ### Version 1.0
 
