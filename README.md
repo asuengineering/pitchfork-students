@@ -36,6 +36,11 @@ A small script to lint the codebase is also included via `composer`. It utilizes
 
 ## Release Notes
 
+### Version 1.1
+
+- Addressed logic error in `studentorg` CPT which would only display an email address if there was also a URL present.
+- The `studentorg` URL field now produces a link instead of plain text in the single template.
+
 ### Version 1.0
 
 - Finalized style and tempalate files for Search and Filter support.

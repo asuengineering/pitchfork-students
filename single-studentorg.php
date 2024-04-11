@@ -41,11 +41,11 @@ if (! $fields) {
 				<?php
 				if ( $fields['studentorg_website_url'] ) {
 					echo '<p class="lead website"><span class="fa-solid fa-globe fa-fw" title="Website:"></span>';
-					echo $fields['studentorg_website_url'];
+					echo '<a href="' . esc_attr( $fields['studentorg_website_url'] ) . '">' . esc_attr( $fields['studentorg_website_url'] ) . '</a>';
 					echo '</p>';
 				}
 
-				if ( $fields['studentorg_website_url'] ) {
+				if ( $fields['studentorg_email'] ) {
 					echo '<p class="lead email"><span class="fa-solid fa-envelope fa-fw" title="Email:"></span>';
 					echo '<a href="mailto:' . $fields['studentorg_email'] . '">' . $fields['studentorg_email'] . '</a>';
 					echo '</p>';
