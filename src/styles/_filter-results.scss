@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+Styles to support customizations made in /search-filter/results.php
+
+- Define alert box for result count and pagination
+- Add CSS grid wrapper for single result entries in the shortcode.
+--------------------------------------------------------------*/
+.result-orgs {
+	padding-right: 4rem;
+
+	.alert {
+		margin-bottom: $uds-size-spacing-6;
+	}
+
+}
+
+.result-org {
+
+	padding-bottom: 4rem;
+	margin-bottom: 4rem;
+	border-bottom: 1px solid $uds-color-base-gray-5;
+
+	.result-org-badges .badge {
+		margin-right: $uds-size-spacing-2;
+		margin-bottom: $uds-size-spacing-1;
+	}
+
+}
+
+form.searchandfilter {
+	ul {
+		padding-left: 0;
+	}
+
+	// Copied from UDS, no ability to alter classes to match.
+	.sf-input-checkbox {
+		border: 4px solid $uds-color-base-gray-7;
+		height: 16px;
+		width: 16px;
+	}
+
+	.sf-field-submit input {
+		background-color: $uds-color-base-maroon;
+		color: $uds-color-base-white;
+		font-weight: 700;
+		border-radius: 400rem;
+		border-color: transparent;
+		line-height: 1;
+		font-size: .875rem;
+		padding: .5rem 1rem;
+	}
+}
+
+/*--------------------------------------------------------------
+Desktop
+--------------------------------------------------------------*/
+@include media-breakpoint-up($md) {
+	.result-org {
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 200px auto;
+		gap: $uds-size-spacing-2 $uds-size-spacing-4;
+	}
+
+	.result-org-thumbnail {
+		grid-column: 1;
+		grid-row: 1 / span 3;
+	}
+
+	.result-org-title {
+		margin-top: 0;
+	}
+
+	.result-org-badges .badge {
+		margin-bottom: 0;
+	}
+}
