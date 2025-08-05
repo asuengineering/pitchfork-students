@@ -36,6 +36,10 @@ A small script to lint the codebase is also included via `composer`. It utilizes
 
 ## Release Notes
 
+### Version 1.2
+
+- FIX: The `single-studentorg` template produced a link to a non-existent term page. Replace anchor tag with `badge` element.
+
 ### Version 1.1
 
 - Addressed logic error in `studentorg` CPT which would only display an email address if there was also a URL present.
