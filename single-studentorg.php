@@ -65,11 +65,11 @@ if (! $fields) {
 					$termlist = '';
 					if ( ! empty( $terms ) ) {
 						$termlist = '<div class="orgtype-list"><h3><span class="fa-solid fa-tag fa-fw"></span>Categories</h3>';
-						$termlist .= '<ul>';
+						$termlist .= '<div class="card-tags">';
 						foreach( $terms as $term ) {
-							$termlist .= '<li><a class="btn btn-tag btn-tag-alt-white" href="' . esc_url( get_term_link( $term->term_id ) ) . '">' . esc_html( $term->name ) . '</a></li>';
+							$termlist .= '<span class="badge badge-pill text-bg-gray-2">' . esc_html( $term->name ) . '</span>';
 						}
-						$termlist .= '</ul></div>';
+						$termlist .= '</div>';
 					}
 					echo $termlist;
 					?>
@@ -135,8 +135,6 @@ if (! $fields) {
 							$social_links = '<ul class="social-links">';
 
 							foreach ($fields['studentorg_social'] as $icon) {
-								// $icon['studentorg_social_icon']
-								// $icon['studentorg_social_icon']
 
 								$markup = '<li><a href="' . $icon['studentorg_social_url'] . '">';
 								$markup .= $icon['studentorg_social_icon'] . '</a></li>';
